@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color:#f7f7f7;
+    --background-color:#333;
+ 
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--background-color);
+    color: var(--main-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+
+footer {
+    background:var(--background-color);
+    color:var(--main-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .contact-info a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+#contact-form h3{
+    text-align: center;
+}
+#contact-form {
+    padding: 12px 24px 24px 24px;
+    margin: 48px 12px;
+    background: var(--background-color);
+    border-radius: 4px;
+}
+#contact-form label {
+    font-size: 0.85em;
+    margin-left: 14px;
+}
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;
+
+}
+
+#contact-form button[type=submit] {
+    background: #64B5F6;
+    margin: 0 auto;
+    outline: 0;
+    color: var(--main-color);
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.1s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#contact-form button[type=submit]:focus {
+    background: #A5D6A7;
+    color: var(--main-color);
+}
+#contact-form button[type=submit]:hover {
+    background: #2196F3;
+}
+#contact-form .center {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #contact-form {
+        margin: 24px 6px;
+        padding: 10px 20px 20px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
